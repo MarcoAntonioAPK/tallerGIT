@@ -55,13 +55,14 @@ git commit -m "Andres, Actualice un dato"
 git remote add origin link
 git push -u origin master
 -------------------------------------------
+git clone link
 git status
 
 git checkout -b nombreDeLaRama
 git status
 git add .
-git commit -m "meAñadi" 
-git push origin nombreDeLaPractica
+git commit -m " Marco, Descripcion" 
+git push origin nombreDeLaRama
 
 
 Para hacer la union de rama "x" con la master debemos hacer lo siguiente:
