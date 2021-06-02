@@ -1,0 +1,93 @@
+1.- Estando en la carpeta donde haremos nuestro repositorio, usamos el siguiente comando:
+	'git init'
+
+	'git status -s'
+
+2.- Y lo manddamos a el area local.
+	'git add (nombre del archivo)' o podemos usar 'git add .' , para que todo se guarde de manera local-temporal.
+
+3.- Usamos 'git commit -m "En esta aparte anexamos una descripción de nuestros cambios"' //Este comando sirve para hacer una copia de nuestros archivos.
+	//Es recomendable no usar tildes ni caracteres extraños.
+
+4.- Existe un comando para revisar todos los commit's que hemos hecho, para de esta manera regresar una versión atras si es necesario.
+	'git log --oneline'
+
+5.- Ahora bien, si nosotros queremos regresar a una versión de commit, debemos colocar el siguiente comando.
+	'git reset --hard nomBREdeCOMIT'
+
+6.- Ahora, todo esto lo podemos respaldar de manera externa en la nube, por medio de GitHub.
+
+	git remote add origin https://github.com/MarcoAntonioAPK/tallerGIT.git
+	git push -u origin main
+
+-------------------------------------------------
+Ya teniendo un repo creado, nosotros debemos de hacer lo siguinte
+	'git status -s'
+	'git add .'
+	'git status -s'
+	'git commit -m "En esta aparte anexamos una descripción de nuestros cambios"' 
+   	 git push -u origin main
+--------------------------------------------------
+	Es importante crear un archivo README.md para que los colaboradores sepan como y en que estamos trabanado.
+	
+	Bien, hasta este momento, nosotros ya manejamos PUSH (comando para subir los archivos a mi repositorio), pero
+	si nosotros queremos actualizar(comparar lo que hay en cierta rama), nosotros debemos de hacer un PULL
+	con el siguiente comando.
+	'git pull'
+
+	Los TAGS nos sirve para indicar versiones de nuestro código.
+
+-------------------------------------------
+RAMAS
+	'git bracn NombreDeLaRAma'
+	'git checkout NombreDeLaRAma'
+	'git  branch'
+	'git add .'
+	'git commit "blaBla"'
+	'git checkout master'
+	'git merch nombreDeLaRama'
+
+------------------------------------------
+Para mi
+git init 
+git add .
+git commit -m "Cree el ejemplo"
+git remote add origin link
+git push - u origin master
+-------------------------------------------
+git status
+
+git checkout -b nombreDeLaRama
+git status
+git add .
+git commit -m "meAñadi" 
+git push origin nombreDeLaPractica
+
+
+Para hacer la union de rama "x" con la master debemos hacer lo siguiente:
+git checkout master /*Nos vamos a la rama master*/
+git branch /*Vemos en que rama estamos*/
+git merge nombreDeLaRama /*De esta manera unimos las cosas*/
+git log --onelin /*Para ver que ramas tenemos con respecto a la master*/
+git branch -d nombreDeLaRama /*Para eliminar la rama */
+
+
+git status -s
+
+
+/*Movernos a la Rama master*/
+Y hacer git pull
+///////////
+
+
+
+
+
+
+
+
+
+
+Ahora en gitHub aparece una nueva rama
+Y ahora debemos crear un pull request.
+git pull
